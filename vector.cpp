@@ -120,27 +120,132 @@
 
 // Question---->find a union of two arrays :::
 //lets solve this 
-#include<iostream>
-using namespace std;
-#include <vector>
+// #include<iostream>
+// using namespace std;
+// #include <vector>
 
-int main(){
-	int arr[]={2,3,4,5,1};
-	int sizea=5;
-	int brr[]={6,7,8,9};
-	int sizeb=4;
-	vector<int>storage;
-	for(int i=0;i<sizea;i++){
-		storage.push_back(arr[i]);
-	}
-    for(int i=0;i<sizeb;i++){
-		storage.push_back(brr[i]);
+// int main(){
+// 	int arr[]={2,3,4,5,1};
+// 	int sizea=5;
+// 	int brr[]={6,7,8,9};
+// 	int sizeb=4;
+// 	vector<int>storage;
+// 	for(int i=0;i<sizea;i++){
+// 		storage.push_back(arr[i]);
+// 	}
+//     for(int i=0;i<sizeb;i++){
+// 		storage.push_back(brr[i]);
 
-	}
-    cout<<"printing the union of two arrays are:";
-	for (int i=0;i<storage.size();i++){
-		cout<<storage[i]<<" ";
-	}
+// 	}
+//     cout<<"printing the union of two arrays are:";
+// 	for (int i=0;i<storage.size();i++){
+// 		cout<<storage[i]<<" ";
+// 	}
 
 
-}
+// }
+
+
+//Qusetion----> how to find an intersection of two arrays:
+// #include<iostream>
+// using namespace std;
+// #include<vector>
+// int main(){
+// 	int arr[]={2,5,6,5,8};
+// 	int sizea=5;
+// 	int brr[]={4,6,5,7};
+// 	int sizeb=4;
+// 	vector<int>store;
+// 	for (int i=0;i<sizea;i++){
+// 		for (int j=0;j<sizeb;j++){
+// 			if (arr[i]==brr[j]){
+// 				store.push_back(arr[i]);
+// 			}
+// 		}
+// 	}
+// 	for(int k=0;k<store.size();k++){
+// 		cout<<store[k];
+// 	}
+	
+// }
+//age same elements single array me hi aa gya to problem aa jayega ,how to resolve:
+// toh fir hame mark kar denge jo mil gya use brr[j] ko -1 se initialise kar do
+
+
+
+// int main(){
+// 	int arr[]={2,5,6,5,8};
+// 	int sizea=5;
+// 	int brr[]={4,6,5,7};
+// 	int sizeb=4;
+// 	vector<int>store;
+// 	for (int i=0;i<sizea;i++){
+// 		for (int j=0;j<sizeb;j++){
+// 			if (arr[i]==brr[j]){
+// 				brr[j]=-1;//bhalehi int_min kar likh do agr SAabhi negative a gye toh
+// 				store.push_back(arr[i]);
+// 			}
+// 		}
+// 	}
+// 	for(int k=0;k<store.size();k++){
+// 		cout<<store[k];
+// 	}
+	
+// }
+
+//same question karna hai for union k liye 
+//now lets do another question
+
+
+//______________--------------------_____________________________
+//Question----->  pari sum wale matlab  ,ki sum hame de rakha h =9 ,kisi bhi 2 elemnts ka sum 
+//jo ki nine ho wo return kardo.
+
+// #include<iostream>
+// using namespace std;
+
+// int main() {
+//     int arr[] = {3, 4, 5, 6, 7, 8};
+//     int size = 6;
+//     int sum = 9;
+//     int diff;
+
+//     for(int i = 0; i < size; i++) {
+//         diff = sum - arr[i];
+        
+//         for(int j = i + 1; j < size; j++) {
+//             if (diff == arr[j]) {
+//                 cout << "Two elements whose sum is 9 are: " << arr[i] << " and " << arr[j] << endl;
+//                 return 0;
+//             }
+//         }
+//     }
+
+//     cout << "No such elements found." << endl;
+//     return 0;
+// }
+
+//another way to find same problem::::
+
+
+// #include<iostream>
+// #include<vector>
+// using namespace std;
+// int main(){
+// 	int sum=9;
+// 	vector<int>arr{2,3,4,5,6,7,8,0,4};        //size method vector par lagti h na ki array par..
+// 	for(int i=0 ; i<arr.size(); i++){
+// 		for (int j=i+1 ; j<arr.size() ; j++){
+// 			if(arr[i]+arr[j] == sum){
+// 				cout<<"if we add both number "<<arr[i] << " and " << arr[j]<<"then we get 9"<<endl;
+// 			}
+// 		}
+
+// 	}
+// }
+
+//same question trivlet k liye bhi puch sakte hai or four sum k liye bhi to bas looops bada do that`s end.
+
+//------------------------------------------------Next---------------------------------------------------------------------
+
+//Question----->
