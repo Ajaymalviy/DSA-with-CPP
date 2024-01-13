@@ -197,7 +197,9 @@
 //now lets do another question
 
 
-//______________--------------------_____________________________
+//______________--------------------_____________________________-------------------------------------_______________________---
+
+
 //Question----->  pari sum wale matlab  ,ki sum hame de rakha h =9 ,kisi bhi 2 elemnts ka sum 
 //jo ki nine ho wo return kardo.
 
@@ -249,3 +251,54 @@
 //------------------------------------------------Next---------------------------------------------------------------------
 
 //Question----->
+
+//leetcode easy question in night ::::::12 january 2024
+// class Solution:
+//     def halvesAreAlike(self, s: str) -> bool:
+//         l=list(s)
+//         countf=0
+//         counts=0
+//         vowels= ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+//         mid=len(l)//2
+//         for i in range(0,mid+1):
+//             if i in vowels:
+//                 countf +=1
+             
+//         for i in range (mid+1, len(l)):
+//             if i in vowels:
+//                 counts +=1
+            
+//         if countf==counts:
+//             return True
+//         else :
+//             return False
+//-----------------------------------------------Next----------------------------------------------------------------------
+// Question---->
+
+//sort zero and one in form where start contain zeros and last contain ones.
+//lets solve this 
+
+// #include<iostream>
+// #include<vector>
+// using namespace std;
+// int main(){
+// 	vector<int>arr{0,1,1,0,0,0,1,0,0,1,1,0,0,1};
+// 	int start=0;
+// 	int end=arr.size()-1;
+// 	int i=0;
+// 	while(i != end){
+// 		if(arr[i]==0){
+// 			swap(arr[i],arr[start]);
+// 			start++;
+// 			i++;
+// 		}
+// 		if(arr[i]==1){
+// 			swap(arr[i],arr[end]);
+// 			end--;
+// 		}
+
+// 	}
+// 	for (auto value: arr){
+// 		cout<<value<<" ";
+// 	}
+// }
