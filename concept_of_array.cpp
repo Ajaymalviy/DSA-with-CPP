@@ -1,8 +1,8 @@
-array ----> it is a similar type of elements of collection ,which contains contineous memory allocation .
-why do we need??_____> if we want to create more than 1000thousand of variable than we are not able create a1,a2,a3....a1000 variable again and again thats why we create array which contain all the variable in single variable entity which is array.like int arr[3000];
-memory me ye intger type ka 3000 space continous arrr name ke variable me store kar diya
+// array ----> it is a similar type of elements of collection ,which contains contineous memory allocation .
+// why do we need??_____> if we want to create more than 1000thousand of variable than we are not able create a1,a2,a3....a1000 variable again and again thats why we create array which contain all the variable in single variable entity which is array.like int arr[3000];
+// memory me ye intger type ka 3000 space continous arrr name ke variable me store kar diya
 
-array creation like ---< int arr[100]; char a[20]; bool a[176]; are the different type of datas array
+// array creation like ---< int arr[100]; char a[20]; bool a[176]; are the different type of datas array
 
 
 
@@ -25,9 +25,9 @@ int main() {
 
 //Creation is done now lets declare value in this 
 
-#include <iostream>
-using namespace std;
-int main() {
+// #include <iostream>
+// using namespace std;
+// int main() {
 //      int arr[]={2,3,4,2};
 //      int arr[3]={2,3,4};
 //      int arr[10]={3,4,5,2}

@@ -173,41 +173,176 @@
 //Question ----> finding a element if exist in matrix then return true else return false:
 
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-    bool search_element( int arr[][3],int row, int col,int element){
-        for(int i=0;i<row;i++){
-            for(int j=0;j<col;j++){    //yato result ko yahi par initialise kar do taki niche use zero na karna pade;
-                if(arr[j][i]==element){
-                    return true;
-                }
+//     bool search_element( int arr[][3],int row, int col,int element){
+//         for(int i=0;i<row;i++){
+//             for(int j=0;j<col;j++){    //yato result ko yahi par initialise kar do taki niche use zero na karna pade;
+//                 if(arr[j][i]==element){
+//                     return true;
+//                 }
                  
-            }
+//             }
                 
             
-        }
-        return false;
-    }    
-int main()
-{
-   int arr[3][3]={
-    {1,2,3},
-    {4,5,6},
-    {7,8,9}};
-    int row=3;
-    int col=3;
-    int element;
-    cout<<"Enter the element which you want to search in array: ";
-    cin>>element; 
-    search_element(arr,row,col,element);
-    bool result = search_element(arr, row, col, element);
+//         }
+//         return false;
+//     }    
+// int main()
+// {
+//    int arr[3][3]={
+//     {1,2,3},
+//     {4,5,6},
+//     {7,8,9}};
+//     int row=3;
+//     int col=3;
+//     int element;
+//     cout<<"Enter the element which you want to search in array: ";
+//     cin>>element; 
+//     search_element(arr,row,col,element);
+//     bool result = search_element(arr, row, col, element);
 
-        if (result) {
-            cout << "Element found in the array." << endl;
-        } else {
-            cout << "Element not found in the array." << endl;
-        }
+//         if (result) {
+//             cout << "Element found in the array." << endl;
+//         } else {
+//             cout << "Element not found in the array." << endl;
+//         }
 
-        return 0;
-}
+//         return 0;
+// }
+
+
+//--------------------------------------------Next------------------------------------------------------
+//Qusstion -----> find the max and min number from 2d array
+
+// #include<iostream>
+// #include <limits.h>
+// using namespace std;
+// int maxi=INT_MIN;
+// int arr[3][3]={
+//     {1,2,6},
+//     {3,4,5},
+//     {7,8,19}};
+// int row=3;
+// int col=3;   
+
+// int main(){
+//     for (int i =0;i<row;i++){
+//         for (int j=0;j<col;j++){
+//             if (arr[i][j]>maxi){
+//                 maxi=arr[i][j];
+//             }
+//         }
+//     }
+
+//     cout<<"maximum element of this array is :"<<maxi;
+// }
+
+
+//MINIMUM ELEMENT OF THE ARRAY---------
+
+// #include<iostream>
+// #include <limits.h>
+// using namespace std;
+// int maxi=INT_MAX;
+// int arr[3][3]={
+//     {1,2,6},
+//     {3,4,5},
+//     {7,8,19}};
+// int row=3;
+// int col=3;   
+
+// int main(){
+//     for (int i =0;i<row;i++){
+//         for (int j=0;j<col;j++){
+//             if (arr[i][j]<maxi){
+//                 maxi=arr[i][j];
+//             }
+//         }
+//     }
+
+//     cout<<"minimum element of this array is :"<<maxi;
+// }
+
+
+//------------------------------------Next----------------------------------------------------------------------------
+//Qusetion ---->transopose a matric
+// #include<iostream>
+// // #include <limits.h>
+// using namespace std;
+// // int maxi=INT_MAX;
+// int arr[3][3]={
+//     {1,2,6},
+//     {3,4,5},
+//     {7,8,19}};
+// int row=3;
+// int col=3;   
+// int main(){
+  
+//         for(int i=0; i<row; i++){
+//             for(int j=i;j<col;j++){
+//                 swap(arr[i][j],arr[j][i]);
+              
+//             }//there is only small change i do in transpose a matrix which is just as like i swap all the index ,
+//             //this get an issue of dual changes as same as before on coming on same index ,
+//             //i resolve this on moving into loop from the i means those row then i go from there in column.
+//         }
+//             cout<<"array after the   transpose is :"<<endl;
+//         for (int i =0;i<row;i++){
+//             for (int j=0;j<col;j++){
+//                 cout<<arr[i][j]<<" ";  
+//             }
+//             cout<<endl;
+//         }
+        
+
+// } 
+
+//----------------------------------vector of vector----------------------------------------------------
+//as same as  vector of int which contain integer of vector ,vector of bool contain boolean of vector and same as char,string etc type vector
+//there is another vector which is vector of vector which contain vectors itself inside this owm.
+//how its declaration -----
+//  vector<vector<int> > array;     // always remember that sometime in between > > space is give error ,it is complsry to give space
+//now ,lets intialise it by any integer value::
+
+
+
+#include<iostream>
+using namespace std;
+#include<vector>
+
+int main(){
+   // vector<vector<int> > arr;
+//     vector<int>a{1,2,3};
+//     vector<int>b{4,5,6};
+//     vector<int>c{7,8,9};
+//     arr.push_back(a);   //phle big vector liya uske under ek or vector k under  me elements dale then push in vector then vector of vector.
+//     arr.push_back(b);
+//     arr.push_back(c);
+//     for(int i=0;i<arr.size();i++){
+//         for(int j=0;j<arr[0].size();j++){  //arr[0 ] hi nahi koisa bhi row lelo jiske same column h 
+//         //but if no. column is differ then we find out by arr[i].
+//             cout<<arr[i][j]<<" ";
+
+//         }
+//         cout<<endl;
+//     }
+// }
+
+
+//how to initalise 2-d vector lets see :
+
+//vector<vector<int> >arr(row, vector<int> (col, intialising value))// this is my 2d vector of vector :
+//lets create of 5X5 matrix for 2d array using vector:
+
+
+    vector<vector<int> > array(5, vector<int>(5,-5));
+    for(int i=0;i<array.size();i++){
+        for(int j=0; j< array[0].size();j++){
+            cout<<array[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+
+}   
