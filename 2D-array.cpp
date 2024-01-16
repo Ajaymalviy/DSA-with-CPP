@@ -337,12 +337,12 @@ int main(){
 //lets create of 5X5 matrix for 2d array using vector:
 
 
-    vector<vector<int> > array(5, vector<int>(5,-5));
-    for(int i=0;i<array.size();i++){
-        for(int j=0; j< array[0].size();j++){
-            cout<<array[i][j]<<" ";
-        }
-        cout<<endl;
-    }
+//     vector<vector<int> > array(5, vector<int>(5,-5));
+//     for(int i=0;i<array.size();i++){
+//         for(int j=0; j< array[0].size();j++){
+//             cout<<array[i][j]<<" ";
+//         }
+//         cout<<endl;
+//     }
 
-}   
+// }   
