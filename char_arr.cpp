@@ -12,14 +12,15 @@
 //lets see how?
 
 
-#include<iostream>
-using namespace std;
-int main(){
-    char name[100];
-    cout<<"enter your name :  ";
-    cin>>name;
-    cout<<"your name is "<< name << " thanks for asking :"<<endl;
-    //another way of taking same as from cin which is single single character .
+// #include<iostream>
+// using namespace std;
+// #include<string.h>
+// int main(){
+    // char name[100];
+    // cout<<"enter your name :  ";
+    // cin.getline(name, 50);// use after 
+    // cout<<"your name is "<< name << " thanks for asking :"<<endl;
+    // //another way of taking same as from cin which is single single character .
     //  name[0]='a';
     //  name[1]='b';
     // cin>>name[2];
@@ -44,6 +45,75 @@ int main(){
 //--------------------------------------------------------
   
    //remember if we use space , tab or any  _ underscore then cin does not take it all three it left after the value of this three.
+   // like ajay malviya is not print instead of ajaymalviya but we can print first one also how?
+   //using getline function .
+   // cin.getline(name, 50); this work porperly  maximum char can be 50 takes with spaces and all three-
+   
+   
+   //--------------------------------------NEXT-----------------------------------------------
+   //-----------------------------QUESTION ------------------------------------------------
+   //Question--->length of the string 
+    
+    // #include<iostream>
+    // using namespace std;
+    // #include<string.h>
+    
+    // int getlenght(char name[]){
+    //     int length=0;
+    //     int i=0;
+    //     while (name[i] != '\0'){
+    //         length++;
+    //         i++;
+    //     }
+    //     return length;
+    // }
+//    int main(){
 
-}
+//     char name[100];
+//     cout<<"enter your name : ";
+//     cin>>name;
+//     cout<<endl; 
+//     cout<<"length of your name is :"<<getlenght(name);//there is also a funtion to display length of char array
+//     cout<<"length of your name is from method :"<< strlen(name);
+        
+//     }
 
+// Reverse a string is the another question -----------------------------
+
+
+    
+    #include<iostream>
+    using namespace std;
+    #include<string.h>
+    
+    int getlenght(char name[]){
+        int length=0;
+        int i=0;
+        while (name[i] != '\0'){
+            length++;
+            i++;
+        }
+        return length;
+    }
+    int revers_string(char name[]){
+        int i=0;
+        int n=getlenght(name);
+        int j=n-1;
+        while(i<=j){
+            swap(name[i],name[j]);
+            i++;
+            j--;
+        }
+        return 0;
+    }
+
+    int main(){
+
+    char name[100];
+    cout<<"enter your name : ";
+    cin>>name;
+    cout<<"name before process:"<<name;
+    cout<<endl;
+    revers_string(name);
+    cout<<"name after reverse: "<<name<<endl;
+    }
