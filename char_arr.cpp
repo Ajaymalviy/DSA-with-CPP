@@ -106,14 +106,32 @@
         }
         return 0;
     }
+    void replacespace(char sentance[]){
+        int size=strlen(sentance);
+        for (int i=0; i<size; i++){
+            if(sentance[i]== ' '){
+                sentance[i] = '@';
+            }
+        }
 
+
+
+
+
+
+    }
     int main(){
 
-    char name[100];
-    cout<<"enter your name : ";
-    cin>>name;
-    cout<<"name before process:"<<name;
-    cout<<endl;
-    revers_string(name);
-    cout<<"name after reverse: "<<name<<endl;
+    // char name[100];
+    // cout<<"enter your name : ";
+    // cin>>name;
+    // cout<<"name before process:"<<name;
+    // cout<<endl;
+    // revers_string(name);
+    // cout<<"name after reverse: "<<name<<endl;
+    char sentance[100];
+    cout<<"enter a sentance:"<<endl;
+    cin.getline(sentance, 100);
+    replacespace(sentance);
+    cout<< "your name is now changes into :"<<sentance<<endl;
     }
