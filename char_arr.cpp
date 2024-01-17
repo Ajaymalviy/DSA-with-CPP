@@ -82,45 +82,45 @@
 
 
     
-    #include<iostream>
-    using namespace std;
-    #include<string.h>
+    // #include<iostream>
+    // using namespace std;
+    // #include<string.h>
     
-    int getlenght(char name[]){
-        int length=0;
-        int i=0;
-        while (name[i] != '\0'){
-            length++;
-            i++;
-        }
-        return length;
-    }
-    int revers_string(char name[]){
-        int i=0;
-        int n=getlenght(name);
-        int j=n-1;
-        while(i<=j){
-            swap(name[i],name[j]);
-            i++;
-            j--;
-        }
-        return 0;
-    }
-    void replacespace(char sentance[]){
-        int size=strlen(sentance);
-        for (int i=0; i<size; i++){
-            if(sentance[i]== ' '){
-                sentance[i] = '@';
-            }
-        }
+    // int getlenght(char name[]){
+    //     int length=0;
+    //     int i=0;
+    //     while (name[i] != '\0'){
+    //         length++;
+    //         i++;
+    //     }
+    //     return length;
+    // }
+    // int revers_string(char name[]){
+    //     int i=0;
+    //     int n=getlenght(name);
+    //     int j=n-1;
+    //     while(i<=j){
+    //         swap(name[i],name[j]);
+    //         i++;
+    //         j--;
+    //     }
+    //     return 0;
+    // }
+    // void replacespace(char sentance[]){
+    //     int size=strlen(sentance);
+    //     for (int i=0; i<size; i++){
+    //         if(sentance[i]== ' '){
+    //             sentance[i] = '@';
+    //         }
+    //     }
 
 
 
 
 
 
-    }
-    int main(){
+    // }
+    // int main(){
 
     // char name[100];
     // cout<<"enter your name : ";
@@ -129,9 +129,30 @@
     // cout<<endl;
     // revers_string(name);
     // cout<<"name after reverse: "<<name<<endl;
-    char sentance[100];
-    cout<<"enter a sentance:"<<endl;
-    cin.getline(sentance, 100);
-    replacespace(sentance);
-    cout<< "your name is now changes into :"<<sentance<<endl;
+    // char sentance[100];
+    // cout<<"enter a sentance:"<<endl;
+    // cin.getline(sentance, 100);
+    // replacespace(sentance);
+    // cout<< "your name is now changes into :"<<sentance<<endl;
+    // }
+
+ //-----------------palindrom a string ---------------------------------------------------------   
+
+
+    #include<iostream>
+    using namespace std;
+    int main(){
+        char string ="nitin";
+        int i=0;
+        string[i]=start;
+        n=strlen(string);
+        n-1=end;
+        for(int i=0;i<j;i++){
+            if (start==end){
+               start ++;
+               end--;
+            }
+            return 
+        }
     }
+   
