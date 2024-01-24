@@ -4,17 +4,17 @@
 //size which we want is more than thousand of rows and column then how can we create it ,thats why we take 2-D array.
 //how to diclear int arr[22][44];
 
-//2-d ka acutal me visualisation hi 2d me hoga baki to wo bhi apna memo me as a 1d hi store hoga.
+//2-D ka acutal me visualisation hi 2d me hoga baki to wo bhi apna memory me as a 1-d hi store hoga.
 // int arr[2][1]; jo h visulisation me esa kuch dikhega 
 // [a,b,c,]
 // [d,e,f,]
 // [g,h,i,] jisme 3 row h or ek 3 hi colm h but ye momory me 
 //[a,b,c,d,e,f,g,h,i,] as a linear hi store hoga toh ab kese pta chalega ki 2,1 par kon h.
 //uska formula hota h ek 
-//FORMULA---> C*I+J (C is  total column,i is the ith index  of row and j is jth column )
+//FORMULA---> C*I+J (C is  total column,i is the i-th index  of row and j is j-th column )
 
 //-------------------------------------------------------------------
-// //lets come to the code 
+//lets come to the code 
 
 // #include<iostream>
 // using namespace std;
@@ -51,7 +51,7 @@
 //         cout<<endl;
 //     }
   
-  //how to take input in 2d array
+//---how to take input in 2d array
 
 //     int drr[3][4];
 //     int row=3;
@@ -303,16 +303,16 @@
 //as same as  vector of int which contain integer of vector ,vector of bool contain boolean of vector and same as char,string etc type vector
 //there is another vector which is vector of vector which contain vectors itself inside this owm.
 //how its declaration -----
-//  vector<vector<int> > array;     // always remember that sometime in between > > space is give error ,it is complsry to give space
+//  vector<vector<int> > array;     // always remember that sometime in between > > not having space is give error ,it is complsry to give space
 //now ,lets intialise it by any integer value::
 
 
 
-#include<iostream>
-using namespace std;
-#include<vector>
+// #include<iostream>
+// using namespace std;
+// #include<vector>
 
-int main(){
+// int main(){
    // vector<vector<int> > arr;
 //     vector<int>a{1,2,3};
 //     vector<int>b{4,5,6};
@@ -321,7 +321,7 @@ int main(){
 //     arr.push_back(b);
 //     arr.push_back(c);
 //     for(int i=0;i<arr.size();i++){
-//         for(int j=0;j<arr[0].size();j++){  //arr[0 ] hi nahi koisa bhi row lelo jiske same column h 
+//         for(int j=0;j<arr[0].size();j++){  //arr[0] hi nahi koisa bhi row lelo jiske same column h 
 //         //but if no. column is differ then we find out by arr[i].
 //             cout<<arr[i][j]<<" ";
 

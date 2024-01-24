@@ -19,11 +19,12 @@ int main() {
 
 // output of this code is ---->
 // 0x7ffe5522d3b0 
+// 0x7ffe5522d3b0 
 // array created successfully --->means it take this address in memory
 
 
 
-//Creation is done now lets declare value in this 
+//Creation is done now lets declare/insert value in this 
 
 // #include <iostream>
 // using namespace std;
@@ -52,8 +53,8 @@ int main() {
     cin>>len;
     int arr[10];
     for (int i=0;i<len;i++){
-        cout<<"enter the value at index"<<arr[i];
-        cin>>arr[ i];
+        cout<<"enter the value at index"<<i;
+        cin>>arr[i];
     }
     
         
@@ -126,7 +127,7 @@ value ar index 9is : 0
 arr[10]={0} them its ans is 0 at whole index but if we write 1 at 0 then it givess only one at 0 index not whole is one
 or agar aa[19]; ko hi print krwanan chaha to garbage value lelega
 ------------------------------------------------------------------
-        in array when we do passing the value then it is always take as call by reference:
+      //  in array when we do passing the value then it is always take as call by reference:
 
 // // Online C++ compiler to run C++ program online
 #include <iostream>

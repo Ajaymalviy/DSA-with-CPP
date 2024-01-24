@@ -10,7 +10,7 @@
 //     //vector<int>arr(n);
 
 
-//     //array me append or remove karna hai to apn karenge ese
+//     //vector array me append or remove karna hai to apn karenge ese
 //     //-----> append==push_back
 //     //----->remove==pop_back
 //     //arr.push_back(5)
@@ -27,8 +27,8 @@
 	// vector<int>arr;
 
 
-    //if i want to intialise array with same element than we can do like :
-//vector<int>arr(10,-11);
+    //if i want to intialise  vector array with same element than we can do like :
+//vector<int>arr(10,-11);//where 10 is its size and -11 takes the value of indices
 
 	// cout<<arr.size()<<endl;
 	// cout<<arr.capacity()<<endl;
@@ -78,8 +78,7 @@
 
    // Questions---->
 
-        //we have a array which contains elements as every elements comes two times in a array ,but only one element comes 
-        //at once only . how  to find it ?
+        //we have a array which contains elements as , every elements comes two times in a array ,but only one element comes        //at once only . how  to find it ?
         // we can use  XOR operator to solve this question 
       // it works as if we have 1,3,4,5,1,3,5 then it cut all same element with each other and find one which is not match with anyone.
        // vector<int>example{2,4,5,6,7,4,2,6}

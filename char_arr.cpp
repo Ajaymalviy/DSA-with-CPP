@@ -139,20 +139,49 @@
  //-----------------palindrom a string ---------------------------------------------------------   
 
 
-    #include<iostream>
-    using namespace std;
-    int main(){
-        char string ="nitin";
-        int i=0;
-        string[i]=start;
-        n=strlen(string);
-        n-1=end;
-        for(int i=0;i<j;i++){
-            if (start==end){
-               start ++;
-               end--;
-            }
-            return 
-        }
-    }
+    // #include<iostream>
+    // using namespace std;
+    // #include<cstring>
+    // bool ispalindrom(char arr[]){
+    //     int i=0;
+    //     int j=strlen(arr) -1 ;
+    //     while(i<=j){
+    //         if (arr[i] != arr[j]){
+    //             return false;
+    //         }
+    //         else{
+    //             i++;
+    //             j--;
+    //         }
+    //     }  return true ;
+    // }
+    // int main(){
+    //     char arr[100] ="nitir";
+    //     cout<<"your string is :"<<ispalindrom(arr);
+        
+    // }
+
+
+    //----------------------imp---------question---------------------------------
+//    Question---> que is that we have a sting of small/lowercase we want to change this into upercase ,how?
+
+// #include<iostream>
+// #include<string.h>
+// using namespace std;
+// void convertinto_Uppercase(char arr[]){
+//     int n=strlen(arr);
+//     for(int i=0;i<n;i++){
+//         arr[i]=arr[i] - 'a' +'A';  //for lower to uper case -a +A.  ITS reverse is -A +a for uper to lower.
+//     }
+
+// }
+
+// int main(){
+//     char arr[100]="ajay";
+//     int n = strlen(arr);
+//     convertinto_Uppercase(arr);
+//     cout<<"convesion of ajay in uper case is :"<<arr;
+
+// }
+
    
