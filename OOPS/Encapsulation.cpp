@@ -18,6 +18,7 @@ public:
 	string subject;
 	
 
+
 	//methods or member functions
 	void changedepartment(string newdepartment){
 		department = newdepartment;
