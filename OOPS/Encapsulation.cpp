@@ -35,6 +35,7 @@ public:
 	// 	cout<<"this is from getsalary function i was print salary "<<salary<<endl;
 	// } 
 
+
 	float getsalary(){
 		return salary;
 	}
