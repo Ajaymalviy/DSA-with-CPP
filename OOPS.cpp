@@ -37,6 +37,7 @@ public:
 		cout<<"this is from setsalary function s"<<s<<endl;
 	}
 
+
     //it called a getter which print salart by jugad
 	// void getsalary(){
 	// 	cout<<"this is from getsalary function i was print salary "<<salary<<endl;
