@@ -2,6 +2,10 @@
 //a constructor has the same name as that of the class, and it does not have a return type.
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/main
 //lets create a constructor..
 #include <iostream>
 using namespace std;
@@ -14,6 +18,7 @@ private:
 	int population;
 
 public:
+
 	//this is default constructor if we are not create this manually then it create boxes of name location and population of data member in memory but not initialise values .
 	Village(){
 		cout<<"this is a default constructor which is called automatically when object is initialize of villlage class"<<endl;
