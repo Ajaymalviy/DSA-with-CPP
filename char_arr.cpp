@@ -6,6 +6,7 @@
 // It takes 1-byte in memory space and its value varies in b/w -127 to 128 , or -2^7 ot 2^7-1.
 
 
+
 //when i take in int arr [20];
 //i use cin>>arr[2] for 3rd index  [n] for n-1 index ,and whatever but at a time only taken one integer 
 //but in case of char i can take whole string as a character :
