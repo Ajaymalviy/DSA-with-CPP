@@ -2,7 +2,7 @@
 //the combination of multiple 1-D array .
 //why do we need ----if we create 5 array and collect it then it comes into single 2-D array but what if the array
 //size which we want is more than thousand of rows and column then how can we create it ,thats why we take 2-D array.
-//how to diclear int arr[22][44];
+//how to dizclear int arr[22][44];
 
 //2-D ka acutal me visualisation hi 2d me hoga baki to wo bhi apna memory me as a 1-d hi store hoga.
 // int arr[2][1]; jo h visulisation me esa kuch dikhega 
@@ -30,9 +30,9 @@
 //     int columnsize =3;
    // cout<<brr[2][5]<<endl; it gives error
     //cout<<brr[2][2]<<endl; //agr n index ki len  n toh n-1 indx tak jayenge 
-    //how to print this --it may be row wish or it may be column wish.
+    //hw to print this --it may be row wish or it may be column wish.
     //lets see both
-
+o
     //row wish print of 2d array
 //     for(int i =0;i<rowsize;i++){
 //         for (int j=0;j<columnsize;j++){
@@ -286,11 +286,11 @@
               
 //             }//there is only small change i do in transpose a matrix which is just as like i swap all the index ,
 //             //this get an issue of dual changes as same as before on coming on same index ,
-//             //i resolve this on moving into loop from the i means those row then i go from there in column.
+//             //i resolve this on moving into loop, from  i means those row then i go from there in column.
 //         }
 //             cout<<"array after the   transpose is :"<<endl;
 //         for (int i =0;i<row;i++){
-//             for (int j=0;j<col;j++){
+//             for (int j=0;j<col;j++){  //j ki value i+1 se start hogi.
 //                 cout<<arr[i][j]<<" ";  
 //             }
 //             cout<<endl;
