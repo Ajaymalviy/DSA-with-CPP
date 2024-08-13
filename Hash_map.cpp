@@ -17,6 +17,7 @@ int main(){
 	pair<string, int>p = make_pair("babbar",3);
 	m.insert(p);
  
+
     //2nd way of insertion of data:
 	pair<string,int>pair2("hai", 3);
 	m.insert(pair2);
