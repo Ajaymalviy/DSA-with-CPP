@@ -5,7 +5,6 @@
 // array creation like ---< int arr[100]; char a[20]; bool a[176]; are the different type of datas array
 
 
-
 // Online C++ compiler to run C++ program online ,it start with 0 
 #include <iostream>
 using namespace std;
