@@ -11,6 +11,7 @@ int main()
 {
 for(int i=0;i<5;i++)
 }
+
 printf("\nEnter the rollno:");
 scanf("%d",&S1.rollno);
 printf("Enter name");
