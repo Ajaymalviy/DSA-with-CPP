@@ -1,4 +1,5 @@
 //string in nothing same as character , where collcetion of characrter hi hai ,
+
 // string is a datatype ,dynamic character array (push back ,etc ) , ider ye mutable hota hai java me immutable hota h
 // hamesh ham string use karenge na ki character array 
 //ye bhi same  as vector hota h jaha collcetion of character store karega.
