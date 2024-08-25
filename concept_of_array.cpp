@@ -22,7 +22,6 @@ int main() {
 // array created successfully --->means it take this address in memory
 
 
-
 //Creation is done now lets declare/insert value in this 
 
 // #include <iostream>
