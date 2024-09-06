@@ -42,7 +42,6 @@ int main(){
 	  {"Three", 3} 
 	}; 
 
-
    //5th way 
 	// inserting value by insert function 
 	umap.insert(make_pair("e", 2.718)); 
