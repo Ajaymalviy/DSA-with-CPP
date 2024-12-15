@@ -37,6 +37,31 @@ class heap{
         }
     }
 
+    void delete_heap(){
+        if(size==0){
+            cout<<"array is empty no need to delete"<<endl;
+            return;
+        }
+        arr[1]=arr[size];
+        size --;
+        //size bhi kam kar di or root ko last se swap bhi kar diya to ab left right se compare or kar lena h
+        int i=1;
+        int left_element=2*i;
+        int right_element=2*i+1;
+        
+        while(i<size){
+            if(arr[i]<arr[left_element]){
+                swap(arr[i],arr[left_element]);
+            }
+            else if(arr[i]<arr[right_element]){
+                swap(arr[i],arr[right_element]);
+            }
+            else{
+                return;
+            }
+        }
+    }
+
     void print(){
         for(int i=1; i<=size; i++){
             cout<<arr[i]<<" "<<endl;
@@ -48,8 +73,11 @@ int main(){
     heap h;
     h.insert(15);
     h.insert(16);
-    h.insert(17);
-    h.insert(22);
+    // h.insert(17);
+    // h.insert(22);
+    h.print();
+    h.delete_heap();
+    cout<<"after deletion"<<endl;
     h.print();
 
 
