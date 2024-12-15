@@ -67,6 +67,23 @@ class heap{
             cout<<arr[i]<<" "<<endl;
         }
     }
+
+
+
+    void heapify(int arr, int n, int i){//n means size , i matlb kaha se kaha tak k array ko heapify karna h.
+        int largest = i;
+        int left_element=2*i;
+        int right_element=2*i+1;
+        if(left_element<n && arr[largest]<arr[left_element]){
+            left_element=largest;
+        }
+        else if(right_element<n && arr[largest]<arr[right_element]){
+            right_element=largest;
+        }
+        
+        if(largest != i)
+
+    }
 };
 
 int main(){
