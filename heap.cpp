@@ -70,33 +70,75 @@ class heap{
 
 
 
-    void heapify(int arr, int n, int i){//n means size , i matlb kaha se kaha tak k array ko heapify karna h.
-        int largest = i;
-        int left_element=2*i;
-        int right_element=2*i+1;
-        if(left_element<n && arr[largest]<arr[left_element]){
-            left_element=largest;
-        }
-        else if(right_element<n && arr[largest]<arr[right_element]){
-            right_element=largest;
-        }
-        
-        if(largest != i)
 
-    }
 };
 
-int main(){
-    heap h;
-    h.insert(15);
-    h.insert(16);
-    // h.insert(17);
-    // h.insert(22);
-    h.print();
-    h.delete_heap();
-    cout<<"after deletion"<<endl;
-    h.print();
+        void heapify(int arr[], int n, int i){//n means size , i matlb kaha se kaha tak k array ko heapify karna h.
+            int largest = i;
+            int left_element=2*i;
+            int right_element=2*i+1;
+            if(left_element<=n && arr[largest]<arr[left_element]){
+                largest=left_element;
+            }
+            if(right_element<=n && arr[largest]<arr[right_element]){
+                largest=right_element;
+            }
+            
+            if(largest != i){
+                swap(arr[largest],arr[i]);
+                heapify(arr, n, i);
+            }
+
+        }
 
 
-    return 0;
+void heap_sort(int arr[], int n) {
+    // Build the max heap first
+    for (int i = n / 2; i > 0; i--) {
+        heapify(arr, n, i);
+    }
+
+    // One by one extract elements from heap
+    while (n > 1) {
+        swap(arr[1], arr[n]);
+        n--;  // Decrease the heap size
+        heapify(arr, n, 1);  // Call heapify on the reduced heap
+    }
 }
+
+
+    int main(){
+        heap h;
+        h.insert(15);
+        h.insert(16);
+        // h.insert(17);
+        // h.insert(22);
+        h.print();
+        h.delete_heap();
+        cout<<"after deletion"<<endl;
+        h.print();
+        int arr[8]={-1, 33,45,7,12,15,6,8};
+        int n =8;
+        //heap ka creation ho gya.
+        for(int i= n/2; i>0; i--){
+
+            heapify(arr, n, i);
+        }
+        cout<<"answer of heapify"<<endl;
+        for(int i=1; i<n; i++){
+            cout<<arr[i]<<" ";
+        }
+        cout<<endl;
+
+
+        cout<<"now apply heap sort on provided heap by heapify"<<endl;
+        heap_sort(arr, n);
+        cout<<"answer of heap sort"<<endl;
+        for(int i=1; i<n; i++){
+            cout<<arr[i]<<" ";
+        }
+        cout<<endl;
+
+
+        return 0;
+    }
