@@ -8,8 +8,6 @@ int main(){
     int sum = aj(3,4);
     cout<<"ye dikh rhaa "<<sum<<endl;
    
-
-
     minus<int>minus;
     int res=minus(2,2);
     cout<<"result of minus is "<<res<<endl;
