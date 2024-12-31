@@ -4,7 +4,7 @@
 using namespace std;
 
 vector<int>arr={ 1,3,4,2,5,6,7};
-int k =1;
+int k =0;
 int n= arr.size();
 int k_element_sort(vector<int> &arr, int k , int n){
     priority_queue<int>pq;
