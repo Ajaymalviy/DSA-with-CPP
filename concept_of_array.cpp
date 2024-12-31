@@ -76,7 +76,7 @@ int main() {
     cout<<endl;
     }
     return 0;
-
+}
 
 
     //done that makin the values change into whole indices of array 
