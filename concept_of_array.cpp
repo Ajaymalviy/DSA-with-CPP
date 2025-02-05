@@ -182,6 +182,22 @@ int main(){
     
     }
     cout<<"maximum element of your array is:"<<maxi;
+
+
+//--------------------------------------------
+    The expression ((num[i] & 1) == (num[i+1] & 1)) checks whether the last bit (the least significant bit, or LSB) of two consecutive numbers in the array num are the same. Let me break it down:
+
+num[i] & 1:
+
+The bitwise AND operation (&) compares the bits of num[i] and 1.
+The binary representation of 1 is ...00001. This means the bitwise AND operation will mask everything except the least significant bit (the last bit) of num[i].
+The result will be 1 if the least significant bit of num[i] is 1 (i.e., if num[i] is odd), and 0 if the least significant bit is 0 (i.e., if num[i] is even).
+num[i+1] & 1:
+
+Similarly, this checks the least significant bit of num[i+1].
+The comparison ==:
+
+After masking the LSB of both num[i] and num[i+1], this checks if the two results are equal. If the LSBs of both numbers are the same, the result will be true, and if they are different, the result will be false.
     
     return 0;
 }
