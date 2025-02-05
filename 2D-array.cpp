@@ -297,7 +297,13 @@ o
 //         }
         
 
-// } 
+// }
+
+// void transposeMatrix(const vector<vector<int>>& mat, vector<vector<int>>& result) {
+//     int rows = mat.size();
+//     int cols = mat[0].size(); column nikalna h to fir 0 pass karna padega index me q -->
+// {{1, 2, 3}, {4, 5, 6}}
+//  ye ek vector of vector h jisme ham size nikalenge to kitne sub vector h ye hi pata chalega means row but agar ham 0 laga denge t0 wo column nikal dega
 
 //----------------------------------vector of vector----------------------------------------------------
 //as same as  vector of int which contain integer of vector ,vector of bool contain boolean of vector and same as char,string etc type vector
