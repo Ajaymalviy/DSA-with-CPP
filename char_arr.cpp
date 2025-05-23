@@ -60,10 +60,11 @@
 //--------------------------------------------------------
   
    //remember if we use space , tab or any  _ underscore then cin does not take it all three it left after the value of this three.
-   // like ajay malviya is not print instead of ajaymalviya but we can print first one also how?
-   //using getline function .
+   // like ajay malviya is not print when write it, instead of it print ajaymalviya,  but if want to print first one we can print by using .
+  
+//using getline function .
    // cin.getline(name, 50); this work porperly  maximum char can be 50 takes with spaces and all three-
-   
+   // ye space ko bhi count karta hai .
    
    //--------------------------------------NEXT-----------------------------------------------
    //-----------------------------QUESTION ------------------------------------------------
