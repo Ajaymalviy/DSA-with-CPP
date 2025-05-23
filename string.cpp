@@ -1,6 +1,6 @@
 //string in nothing same as character , where collcetion of characrter hi hai ,
 
-// string is a datatype ,dynamic character array (push back ,etc ) , ider ye mutable hota hai java me immutable hota h
+// string is a datatype ,dynamic character array (push back ,etc ) , ider ye mutable hota hai python, java me immutable hota h
 // hamesh ham string use karenge na ki character array 
 //ye bhi same  as vector hota h jaha collcetion of character store karega.
 
@@ -17,7 +17,6 @@
 // 	cin>>str;
 // 	cout<<str;
 // 	return 0;
-
 // }
 
 
@@ -48,7 +47,7 @@
 // //compare wala bahut complicated hai yyad rakhna teen ans aayeaga
 //0,-1,1
 //first string ka first char second k first se bada hai to positive aayega
-
+// s="Ajay", s2="Malviya" yha par negative aayega
 
 
 
