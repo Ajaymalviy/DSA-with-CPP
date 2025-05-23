@@ -7,8 +7,8 @@
 
 
 
-//when i take in int arr [20];
-//i use cin>>arr[2] for 3rd index  [n] for n-1 index ,and whatever but at a time only taken one integer 
+//when i take an int arr [20];
+//i use cin>>arr[2] for 3rd index, [n] for n-1 index and whatever, but at a time only taken one integer 
 //but in case of char i can take whole string as a character :
 //lets see how?
 
@@ -19,7 +19,8 @@
 // int main(){
     // char name[100];
     // cout<<"enter your name :  ";
-    // cin.getline(name, 50);// use after 
+    // cin.getline(name, 50);// c ka old version hai isme ek array h name ka usme 49 char tak kuch bhi likh denge to lelega with space as well but last wala auto /0 kardega.
+// getline(cin, name);--> name ek string variable hai and wo direct entry mang rha h.
     // cout<<"your name is "<< name << " thanks for asking :"<<endl;
     // //another way of taking same as from cin which is single single character .
     //  name[0]='a';
