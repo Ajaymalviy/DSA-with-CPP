@@ -28,7 +28,20 @@
     // cin>>name[2];
     // cout<<name[0]<< " "<<name[1]<< " "<<name[2]<< endl;
      //we can take whole inpute as string by using for loop 
+//ek cin.ignore() bhi hota h jo btata hai kitne char tak ignore karna h kisi upr wale ko like --
+// int main() {
+//     int age;
+//     string name;
 
+//     cout << "Enter your age: ";
+//     cin >> age;
+//     cin.ignore();  // 🎯 Ignore leftover '\n'
+
+//     cout << "Enter your name: ";
+//     getline(cin, name);  // ✅ Works fine now
+
+//     cout << "Hello " << name << ", age " << age;
+// }
 //----------------------------------------------------------------
 // concept of char arr is that if we take arr of size 100 and give only 10 character as a string then rest of the space is 
 // takes garbage value after this string of 10 value only one more space is default come whose name is '/0' null character 
