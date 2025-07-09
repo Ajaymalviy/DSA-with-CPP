@@ -24,7 +24,7 @@ public:
         else{
             rare++;
             arr[rare]=data;
-            size--;
+            size++;
             
         }
     }
