@@ -12,7 +12,7 @@ public:
         size=0;
         arr=new int[capacity];
         front=0;
-        rare=-1;
+        rare=-1; //iski zagah 0, 1 ,2 rakh ke dekh sakte hai samj aa jayega ki aage ki jagah 0 aayega jaha se start karenge uske pehle .
     }
 
 
