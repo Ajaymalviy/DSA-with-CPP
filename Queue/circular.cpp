@@ -21,7 +21,7 @@ public:
             cout<<"queue is full ";
             return ;
         }
-        if(front==-1)front=0;
+        if(front==-1)front=rear=0;
         rear=(rear+1)%capacity;
         arr[rear]=data;
         size++;
