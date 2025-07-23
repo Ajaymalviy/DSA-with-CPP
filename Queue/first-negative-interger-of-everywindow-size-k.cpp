@@ -9,19 +9,20 @@ vector<long long>printFirstNegativeInteger( long long int A[], long long int N, 
     deque<long long int>dq;
     vector<long long>ans;
 
-    //for first window of size k
+    //for first window of size ka
     for (int i=0; i<K; i++){
         if(A[i]<0){
             dq.push_back(i);
         }
+    }    
         //store answer as well
-        if(dq.size()>0){
-            ans.push_back(A[dq.front()]);
-        }
-        else{
-            ans.push_back(0);
-        }
+    if(dq.size()>0){
+        ans.push_back(A[dq.front()]);
     }
+    else{
+        ans.push_back(0);
+    }
+    
     
     //for remaining window same logic
 
